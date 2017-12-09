@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'Neutra Text Demi SC';
+    src: url('../fonts/NeutraText-DemiSC.eot');
+    src: url('../fonts/NeutraText-DemiSC.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NeutraText-DemiSC.woff') format('woff'),
+        url('../fonts/NeutraText-DemiSC.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+$Neutra: "Neutra Text Demi SC";
+
+@font-face {
+    font-family: 'Retrology Clean';
+    src: url('../fonts/Retrology-Clean.eot');
+    src: url('../fonts/Retrology-Clean.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Retrology-Clean.woff') format('woff'),
+        url('../fonts/Retrology-Clean.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$Retrology: "Retrology Clean";
+
+
+@font-face {
+    font-family: 'Outfitter Script';
+    src: url('../fonts/OutfitterScript.eot');
+    src: url('../fonts/OutfitterScript.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OutfitterScript.woff') format('woff'),
+        url('../fonts/OutfitterScript.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$Outfitter-Script: "Outfitter Script";
+
+// Define fonts for body and headers
+$body-font: $Neutra, "Helvetica", "sans-serif";
+$headers-font: $Outfitter-Script, "Times", "serif";
+
+h1 {
+
+}
+
+h2 {
+  font-family: $headers-font;
+  color: white;
+  font-style: 70px;
+}
