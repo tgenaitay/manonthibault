@@ -1,0 +1,16 @@
+[data-animate-in=up] {
+  transform: translate3d(0,24px,0);
+}
+
+[data-animate-in] {
+  opacity: 0;
+  transition: transform .6s ease-in-out;
+}
+
+[data-animate-in].in-view {
+  transition-delay: .3s;
+  opacity: 1;
+  -ms-transform: none;
+  transform: none;
+  transition: all .6s ease-in-out;
+}
