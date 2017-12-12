@@ -1,5 +1,18 @@
 nav {
+  position: sticky;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+  left: 0;
   background-color:$dark-blue;
+  .site-header {
+  margin: 0 auto;
+  width: 90%;
+  display:flex;
+  align-items: center;
+  justify-content: left;
+  border-bottom:1px solid $gold;
+  }
   img {
     width:67px;
     height:58px;
@@ -7,5 +20,14 @@ nav {
   a {
     font-family: $Neutra;
     color: $gold;
+    text-decoration: none;
+  }
+}
+
+.site-links {
+  width: 50%;
+  text-align: center;
+  a {
+    padding:0px 10px;
   }
 }

@@ -29,7 +29,7 @@ $Retrology: "Retrology Clean";
     src: url('../fonts/OutfitterScript.eot?#iefix') format('embedded-opentype'),
         url('../fonts/OutfitterScript.woff') format('woff'),
         url('../fonts/OutfitterScript.ttf') format('truetype');
-    font-weight: normal;
+    font-weight: 100;
     font-style: normal;
 }
 
@@ -38,13 +38,27 @@ $Outfitter-Script: "Outfitter Script";
 // Define fonts for body and headers
 $body-font: $Neutra, "Helvetica", "sans-serif";
 $headers-font: $Outfitter-Script, "Times", "serif";
+$font-family-sans-serif:  $body-font;
+$headings-font-family:    $headers-font;
+$font-size-base: 16px;
 
 h1 {
-
+  color: $gold;
+  font-size: 70px;
+  margin: 20px;
 }
 
 h2 {
   font-family: $headers-font;
   color: white;
-  font-style: 70px;
+  font-size: 30px;
+  font-weight:100;
+}
+
+body, p, h1 {
+  font-family: $body-font;
+}
+
+p {
+  font-size: $font-size-base;
 }

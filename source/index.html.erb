@@ -1,39 +1,60 @@
 ---
-title: All you need is love! Manon & Thibault 2018
+title: All we need is love! Manon & Thibault 2018
 ---
 
 <main>
-
-  <header>
-
-    <div id="home">
-      <div class="home-content">
-        <p>
-          This page is up!
+  <header id="accueil">
+      <div class="header">
+        <div class="header-content">
+        <p data-animate-in="up">
+          <%= image_tag 'title.svg' %>
         </p>
-        <h2 data-animate-in="up" class="in-view">
+        <h2 data-animate-in="up">
           Se marient le 23 juin 2018 à Biarritz
         </h2>
-      </div>
-    </div>
-
-  </header>
-  <section id="">
-
-    <div id="home">
-      <div class="home-content">
         <p>
-          This is another section!
+          <a href="#mt">RSVP</a>
         </p>
-        <h2 data-animate-in="up" class="in-view">
-          And a title here
-        </h2>
+        </div>
       </div>
+  </header>
+
+  <%= partial "layouts/navbar" %>
+
+  <section id="mt" class="white">
+    <div class="section-content">
+      <p data-animate-in="up">
+        This is the first section!
+      </p>
+      <h2 data-animate-in="up">
+        To introduce the couple
+      </h2>
     </div>
-
   </section>
-  <section id="">
 
+  <section id="ceremonie">
+    <div class="section-content">
+      <h2 data-animate-in="up">
+        Nous vous attendons nombreux pour la cérémonie
+      </h2>
+      <h1 data-animate-in="up">
+        Château du Clair de Lune
+      </h1 data-animate-in="up">
+      <p>
+        un petit coin de paradis pour célébrer notre amour
+      </p>
+    </div>
+  </section>
+
+  <section id="venir">
+    <div class="section-content">
+      <p data-animate-in="up">
+        This is another section!
+      </p>
+      <h2 data-animate-in="up">
+        And a title here
+      </h2>
+    </div>
   </section>
 
 </main>
