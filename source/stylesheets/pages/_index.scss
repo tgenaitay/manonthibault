@@ -1,8 +1,11 @@
+body {
+  background-color:$dark-blue;
+}
 header {
   position: relative;
   width: 100%;
-  height: 100vh;
-  min-height: 568px;
+  height: 70vh;
+  min-height: 670px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: stretch;
@@ -19,7 +22,7 @@ header {
 .header {
   border:1px solid $gold;
   width: 90%;
-  height: calc(100vh - 200px);
+  height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,16 +42,20 @@ header {
 }
 
 section {
-  background-color:$dark-blue;
   color: white;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  min-height: 100vh;
   text-align: center;
   min-height: 568px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   .section-content{
     width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   p {
     margin-top: 1.5em;
@@ -63,6 +70,14 @@ section {
   }
 }
 
+section#ceremonie {
+  height: 110vh;
+}
+
+section#venir {
+  height: 100vh;
+}
+
 section.white {
   background-color:white;
   p {
@@ -73,14 +88,106 @@ section.white {
   }
 }
 
+.section-illustration.chateau {
+  background-image: url('/images/chateau.png');
+  min-height: 450px;
+  background-position: center;
+  background-size: cover;
+  margin-top:30px;
+  position:relative;
+}
+
+.section-illustration{
+  .fleur-droite img, .fleur-gauche img {
+      width: 150px;
+  }
+  .fleur-droite, .fleur-gauche {
+    position:absolute;
+  }
+  .fleur-gauche {
+    bottom: -4px;
+    left:0px;
+  }
+  .fleur-droite {
+    top:0px;
+    right:0px;
+  }
+  .chateau-info {
+      position: absolute;
+      left: 200px;
+      bottom: 0px;
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+      text-align:left;
+    }
+    li {
+      font-size: 30px;
+      padding:10px 0px;
+      letter-spacing: 3px;
+    }
+    li > a {
+      font-size: 30px;
+      color:white;
+    }
+  }
+}
+
 .plan {
   display:flex;
   justify-content:space-around;
   align-items: center;
+  width:90%;
   img {
     height:60vh;
   }
+  .plan-gauche {
+    margin-right: 20px;
+  }
   .plan-droite{
     text-align:left;
+  }
+}
+
+section#logements {
+  display:block;
+}
+
+.petales {
+  background-image: url('/images/petales.png');
+  min-height: 390px;
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width:90%;
+  padding-top: 90px;
+}
+
+.section-hotels {
+  margin-top:-50px;
+  ul {
+  list-style-type: none;
+  padding-left:0px;
+  }
+  li {
+    transition: all 0.2s ease-in;
+    padding:15px 0px;
+  }
+  li:hover {
+    background-color:$gray;
+  }
+  li:hover p {
+    color:white;
+  }
+  b {
+    color: $red;
+  }
+  p {
+    margin:0;
+    transition: all 0.2s ease-in;
+  }
+  h3 {
+    font-size:30px;
+    color: white;
   }
 }

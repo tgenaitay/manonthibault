@@ -15,11 +15,11 @@
 }
 [data-animate-in] {
   opacity: 0;
-  transition: transform .6s ease-in-out;
+  transition: transform .9s ease-in-out;
 }
 
 [data-animate-in].in-view {
-  transition-delay: .3s;
+  transition-delay: .4s;
   opacity: 1;
   -ms-transform: none;
   transform: none;

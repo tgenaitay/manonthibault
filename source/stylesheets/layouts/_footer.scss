@@ -1,0 +1,23 @@
+footer {
+  width:90%;
+  margin:0 auto;
+  h3 {
+    text-align:center;
+    color:white;
+    font-size: 30px;
+  }
+  h2 {
+    font-size:25px;
+  }
+  p {
+    color:white;
+  }
+  .contacts {
+    width:50%;
+    margin:0 auto;
+    display:flex;
+    justify-content:space-around;
+    padding:40px;
+  }
+  margin-bottom: 50px;
+}
