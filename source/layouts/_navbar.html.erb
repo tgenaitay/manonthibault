@@ -3,12 +3,15 @@
     <% link_to '#mt' do %>
       <%= image_tag 'logo.svg' %>
     <% end %>
-    <div class="site-links">
-    <%= link_to 'Cérémonie', '#ceremonie' %>
-    <%= link_to 'Comment venir', '#venir' %>
-    <%= link_to 'Logements', '#logements' %>
-    <%= link_to 'Liste', '#liste' %>
-    <%= link_to 'RSVP', '#RSVP' %>
+    <div class="mobile">
+      <a onclick="toggleNav()">&#9776;</a>
+    </div>
+    <div class="site-links" id="mobile-links" onclick="toggleNav()">
+      <%= link_to 'Cérémonie', '#ceremonie' %>
+      <%= link_to 'Comment venir', '#venir' %>
+      <%= link_to 'Logements', '#logements' %>
+      <%= link_to 'Liste', '#liste' %>
+      <%= link_to 'RSVP', '#RSVP' %>
     </div>
   </div>
 </nav>

@@ -13,3 +13,7 @@ window.addEventListener('scroll', function(e) {
 
 
 });
+
+function toggleNav() {
+  document.getElementById("mobile-links").classList.toggle("toggle");
+}

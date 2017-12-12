@@ -25,9 +25,13 @@ nav {
 }
 
 .site-links {
-  width: 50%;
+  width: 90%;
   text-align: center;
   a {
     padding:0px 10px;
   }
+}
+
+.mobile {
+  display:none;
 }

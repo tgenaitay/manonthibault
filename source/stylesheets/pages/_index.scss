@@ -30,7 +30,7 @@ header {
   flex-direction: column;
   }
   img{
-    width: 350px;
+    width: 300px;
     margin:20px;
   }
   a {
@@ -46,6 +46,10 @@ section {
   align-items: center;
   justify-content: space-around;
   text-align: center;
+  min-height: 568px;
+  .section-content{
+    width: 90%;
+  }
   p {
     margin-top: 1.5em;
     color: $light-blue;
@@ -66,5 +70,17 @@ section.white {
   }
   h2 {
     color: $light-blue;
+  }
+}
+
+.plan {
+  display:flex;
+  justify-content:space-around;
+  align-items: center;
+  img {
+    height:60vh;
+  }
+  .plan-droite{
+    text-align:left;
   }
 }
