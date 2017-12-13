@@ -40,9 +40,20 @@
     min-height: 500px;
     .header {
     height: 90%;
+      img {
+        width:250px;
+      }
     }
   }
-
+  .header-illu.three, .header-illu.four, .header-illu.five {
+    height: 70px;
+  }
+  .header-illu.four {
+    display:none;
+  }
+  .header-illu.one, .header-illu.two, .header-illu.six {
+    width: 70px;
+  }
   .header .header-content {
       padding: 30px;
       overflow: hidden;
@@ -113,6 +124,7 @@
   .plan {
     img {
     height: 300px;
+    margin-top:30px;
     }
     .plan-gauche {
     margin: 0 auto;
