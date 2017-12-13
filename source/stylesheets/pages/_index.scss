@@ -22,7 +22,7 @@ header {
 .header {
   border:1px solid $gold;
   width: 90%;
-  height: 50vh;
+  height: 70%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,8 +62,8 @@ section {
     color: $light-blue;
   }
   a {
-    font-weight: bold;
     font-size: 16px;
+    text-decoration: none;
   }
   h2 {
 
@@ -71,11 +71,11 @@ section {
 }
 
 section#ceremonie {
-  height: 110vh;
+  min-height: 110vh;
 }
 
 section#venir {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 section.white {
@@ -89,7 +89,7 @@ section.white {
 }
 
 .section-illustration.chateau {
-  background-image: url('/images/chateau.png');
+  background: linear-gradient(to bottom, rgba(255,255,255,0), #d49d5a80), url(/images/chateau.png);
   min-height: 450px;
   background-position: center;
   background-size: cover;
@@ -129,6 +129,19 @@ section.white {
     li > a {
       font-size: 30px;
       color:white;
+      position:relative;
+      padding-bottom: 4px;
+    }
+    li > a:after {
+    content: '';
+
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+
+    border-width: 0 0 1px;
+    border-style: solid;
     }
   }
 }
