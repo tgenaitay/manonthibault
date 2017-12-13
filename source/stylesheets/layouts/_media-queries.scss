@@ -26,6 +26,9 @@
     margin:0 auto;
   }
 }
+  .cta a {
+    min-width: 290px;
+  }
 }
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -141,7 +144,18 @@
   }
   }
 
+  // RSVP
+  section#RSVP{
+    &:before, &:after {
+      display:none;
+    }
+  }
 
+  .cta a {
+    padding: 30px 40px;
+    text-align: center;
+    min-width: 160px;
+  }
 
   // FOOTER
   footer .contacts {
