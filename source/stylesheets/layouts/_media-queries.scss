@@ -32,11 +32,22 @@
 
 @media(max-width: 720px) {
 
+  header {
+    height: 50vh;
+    min-height: 500px;
+    .header {
+    height: 90%;
+    }
+  }
+
   .header .header-content {
       padding: 30px;
       overflow: hidden;
       width: 100%;
     }
+  .section-content {
+    margin:20px auto;
+  }
   nav .site-header {
     justify-content: space-between;
   }
@@ -110,7 +121,7 @@
     width: 90%;
     margin: -50px auto;
     a {
-      font-size: 25px;
+      font-size: 22px;
     }
   }
 
