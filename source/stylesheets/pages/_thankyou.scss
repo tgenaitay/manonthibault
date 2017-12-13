@@ -1,18 +1,20 @@
 .tada {
   font-size:50px;
 }
-a.return {
-font-size: 22px;
-color:white;
-position:relative;
-padding-bottom: 4px;
-}
-a:after {
-content: '';
-width: 100%;
-position: absolute;
-left: 0;
-bottom: 1px;
-border-width: 0 0 1px;
-border-style: solid;
+.thankyou {
+  a.return {
+  font-size: 22px;
+  color:white;
+  position:relative;
+  padding-bottom: 4px;
+  }
+  a:after {
+  content: '';
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  border-width: 0 0 1px;
+  border-style: solid;
+  }
 }
