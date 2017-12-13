@@ -12,6 +12,19 @@
   .plan-droite{
     text-align:left;
   }
+  .plan-gauche {
+    margin:0 auto;
+  }
+}
+.liste {
+  display:flex;
+  justify-content:space-around;
+  align-items: center;
+  flex-direction:column;
+  img.bouquet {
+    height:50vh;
+    margin:0 auto;
+  }
 }
 }
 
@@ -83,8 +96,38 @@
     position: relative;
   }
   // PLAN
-  .plan img {
+  .plan {
+    img {
     height: 300px;
+    }
+    .plan-gauche {
+    margin: 0 auto;
+    }
+  }
+
+  // LOGEMENTS
+  .section-hotels {
+    width: 90%;
+    margin: -50px auto;
+    a {
+      font-size: 25px;
+    }
+  }
+
+  // LISTE
+
+  .liste {
+  display:flex;
+  justify-content:space-around;
+  align-items: center;
+  flex-direction:column;
+  img.bouquet {
+    height:30vh;
+    margin:0 auto;
+    }
+  a {
+    font-size: 22px;
+  }
   }
 
 

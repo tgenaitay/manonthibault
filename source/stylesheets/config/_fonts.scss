@@ -46,6 +46,7 @@ h1 {
   color: $gold;
   font-size: 70px;
   margin: 0px;
+  font-weight: 100;
 }
 
 h2 {
@@ -61,4 +62,5 @@ body, p, h1 {
 
 p {
   font-size: $font-size-base;
+  letter-spacing: 1px;
 }
