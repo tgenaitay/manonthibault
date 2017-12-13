@@ -168,6 +168,9 @@
     &:before, &:after {
       display:none;
     }
+    .form form {
+      width: auto;
+    }
   }
 
   .cta a {

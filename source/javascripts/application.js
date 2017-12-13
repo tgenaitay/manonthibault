@@ -14,3 +14,7 @@ inView('[data-animate-in]').on('exit', function(el){
 function toggleNav() {
   document.getElementById("mobile-links").classList.toggle("toggle");
 }
+
+function toggleForm() {
+  document.getElementById("form").classList.toggle("visible");
+}

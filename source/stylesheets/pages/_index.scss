@@ -260,6 +260,68 @@ section#RSVP {
     background-size: contain;
     background-repeat: no-repeat;
   }
+  .form.visible {
+    display:block;
+  }
+  .form {
+    display:none;
+    position:absolute;
+    background-color:rgba(0,0,0,0.3);
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    min-height: 400px;
+    form {
+      position:relative;
+      min-height: 360px;
+      background-color:white;
+      width:400px;
+      margin:0 auto;
+      padding:20px;
+    }
+    #close {
+      position:absolute;
+      top:10px;
+      right:10px;
+      color:black;
+      cursor: pointer;
+    }
+    li {
+    text-align:left;
+    margin: 0 auto;
+    width: 330px;
+    }
+    .choice {
+      padding: 10px 0px;
+    }
+    span {
+      color:$light-blue;
+    }
+    label {
+      color:$gold;
+    }
+    input {
+      border: 1px solid $light-gray;
+      color:$light-blue;
+      padding: 10px 20px;
+      font-size:20px;
+    }
+    input[type=text] {
+      width:290px;
+      margin:10px 0px;
+    }
+    input[type=submit] {
+      width: 332px;
+      padding:20px;
+      border:0;
+      border-radius: 0;
+      background-color:$gold;
+      color:white;
+      text-transform:uppercase;
+      margin-top: 10px;
+    }
+  }
 }
 
 .cta {
@@ -275,6 +337,12 @@ section#RSVP {
     border:1px solid white;
     padding:30px 100px;
     color:white;
+    cursor:pointer;
+    transition: all 0.1s ease-in!important;
+  }
+  a:hover {
+    color: $gold;
+    background-color:white;
   }
 }
 

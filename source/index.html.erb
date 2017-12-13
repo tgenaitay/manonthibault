@@ -19,7 +19,7 @@ title: All we need is love! Manon & Thibault 2018
           Se marient le 23 juin 2018 à Biarritz
         </h2>
         <p>
-          <a href="#mt">RSVP</a>
+          <a href="#RSVP">RSVP</a>
         </p>
         </div>
       </div>
@@ -41,7 +41,7 @@ title: All we need is love! Manon & Thibault 2018
   <section id="ceremonie">
     <div class="section-content">
       <h2 data-animate-in="up">
-        Nous vous attendons nombreux pour la cérémonie
+        Nous vous attendons nombreux pour la cérémonie au
       </h2>
       <h1 data-animate-in="up">
         Château du Clair de Lune
@@ -60,7 +60,7 @@ title: All we need is love! Manon & Thibault 2018
       <div class="chateau-info">
           <ul>
              <li><a href="https://www.google.fr/maps/place/Château+du+Clair+de+Lune/" target="_blank">48, Avenue Alan Seeger 64200 Biarritz France ></a></li>
-             <li>Samedi 23 Juin 2018 à 17:15</li>
+             <li>Samedi 23 Juin 2018 à 17:00</li>
            </ul>
       </div>
     </div>
@@ -136,7 +136,7 @@ title: All we need is love! Manon & Thibault 2018
           <h3>
             <a href="https://www.booking.com/hotel/fr/biarritz-anglet-aeroport.fr.html" target="_blank"> Hôtel Novotel ></a>
           </h3>
-          <p>un 4 etoiles dans un parc de 3 hectares situe à 1k de l’aéroport, qui dit mieux?</p>
+          <p>un 4 etoiles dans un parc de 3 hectares situé à 1k de l’aéroport, qui dit mieux?</p>
         </li>
       </ul>
     </div>
@@ -166,8 +166,29 @@ title: All we need is love! Manon & Thibault 2018
       <div class="cta">
       <h1 data-animate-in="up">RSVP</h1>
       <h2 data-animate-in="up">Réponse souhaitée avant le 31 avril 2018</h2>
-      <a data-animate-in="fadeIn" href="#">formulaire réponse ></a>
+      <a data-animate-in="fadeIn" onclick="toggleForm()">formulaire réponse ></a>
       </div>
+    </div>
+    <div class="form" id="form">
+      <form action="#">
+        <span id="close"><a onclick="toggleForm()">&#10060;</a></span>
+        <ul>
+          <li><input type="text" placeholder="nom prénom"></li>
+          <li>
+            <div class="choice">
+            <span>Participe<span>
+            <br>
+            <label for="oui">Oui</label>
+            <input type="radio" value="oui" name="participe">
+            <label for="oui">Non</label>
+            <input type="radio" value="non" name="participe">
+            </div>
+          </li>
+          <li><input type="text" placeholder="adresse email"></li>
+          <li><input type="text" placeholder="adresse postale"></li>
+          <li><input type="submit" value="envoyer"></li>
+        </ul>
+      </form>
     </div>
   </section>
 
