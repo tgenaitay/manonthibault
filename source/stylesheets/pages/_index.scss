@@ -306,14 +306,22 @@ section#RSVP {
       color:$light-blue;
       padding: 10px 20px;
       font-size:20px;
+      border-radius:0px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
     }
     select {
       font-size:16px;
       height: 40px;
-      width:150px;
+      width:49%;
       background-color:white;
-      border-radius:0px;
       -webkit-appearance: inner-spin-button;
+    }
+    .selection {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
     }
     input[type=text] {
       width:290px;
