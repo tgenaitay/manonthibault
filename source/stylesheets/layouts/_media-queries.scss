@@ -42,6 +42,7 @@
     height: 90%;
       img {
         width:250px;
+        margin-top: 60px;
       }
     }
   }
@@ -97,6 +98,12 @@
 
   // CHATEAU
 
+  #ceremonie {
+    h2 {
+      margin-top: 50px
+    }
+  }
+
   .section-illustration {
     .fleur-droite img, .fleur-gauche img {
     width: 70px;
@@ -113,7 +120,7 @@
     }
   }
   .section-illustration.chateau {
-    background: linear-gradient(to bottom, rgba(255,255,255,0), #d49d5a80), url(/images/chateau.png);
+    background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(212,157,90,0.9)), url(/images/chateau.png);
     min-height: 450px;
     background-position: -160px;
     background-size: cover;
