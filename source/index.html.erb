@@ -169,7 +169,7 @@ title: All we need is love! Manon & Thibault 2018
       <a data-animate-in="fadeIn" onclick="toggleForm()">formulaire réponse ></a>
       </div>
     </div>
-    <div class="form" id="form">
+    <div class="form visible" id="form">
       <form name="RSVP Samedi 23 Juin 2018" data-netlify="true">
         <span id="close"><a onclick="toggleForm()">&#10060;</a></span>
         <ul>
@@ -183,6 +183,23 @@ title: All we need is love! Manon & Thibault 2018
             <label for="oui">Non</label>
             <input type="radio" value="non" name="participe">
             </div>
+          </li>
+          <li>
+            <select name="Adultes">
+              <option value="0">Adultes</option>
+              <option value="1">1 adulte</option>
+              <option value="2">2 adultes</option>
+              <option value="3">3 adultes</option>
+              <option value="4">4 adultes</option>
+            </select>
+            <select name="Enfants">
+              <option value="0">Enfants</option>
+              <option value="0">0 enfants</option>
+              <option value="1">1 enfant</option>
+              <option value="2">2 enfants</option>
+              <option value="3">3 enfants</option>
+              <option value="4">4 enfants</option>
+            </select>
           </li>
           <li><input type="text" placeholder="adresse email" name="email"></li>
           <li><input type="text" placeholder="adresse postale" name="adresse"></li>

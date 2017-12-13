@@ -278,7 +278,7 @@ section#RSVP {
       background-color:white;
       width:400px;
       margin:0 auto;
-      padding:20px;
+      padding:10px;
     }
     #close {
       position:absolute;
@@ -301,11 +301,19 @@ section#RSVP {
     label {
       color:$gold;
     }
-    input {
+    input, select {
       border: 1px solid $light-gray;
       color:$light-blue;
       padding: 10px 20px;
       font-size:20px;
+    }
+    select {
+      font-size:16px;
+      height: 40px;
+      width:150px;
+      background-color:white;
+      border-radius:0px;
+      -webkit-appearance: inner-spin-button;
     }
     input[type=text] {
       width:290px;
