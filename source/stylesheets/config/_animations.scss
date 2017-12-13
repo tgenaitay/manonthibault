@@ -25,3 +25,9 @@
   transform: none;
   transition: all .6s ease-in-out;
 }
+
+#loader.fadeOut {
+  transition: opacity .9s ease-in-out;
+  opacity: 0;
+  display:none;
+}

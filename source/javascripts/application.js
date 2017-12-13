@@ -7,12 +7,9 @@ inView('[data-animate-in]').on('enter', function(el){
 inView('[data-animate-in]').on('exit', function(el){
         el.classList.remove('in-view')});
 
+document.getElementById("loader").classList.toggle("fadeOut")
+
 }, false );
-
-window.addEventListener('scroll', function(e) {
-
-
-});
 
 function toggleNav() {
   document.getElementById("mobile-links").classList.toggle("toggle");
