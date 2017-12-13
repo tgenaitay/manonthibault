@@ -271,7 +271,7 @@ section#RSVP {
     left:0;
     right:0;
     bottom:0;
-    min-height: 400px;
+    min-height: 411px;
     form {
       position:relative;
       min-height: 360px;
@@ -307,15 +307,15 @@ section#RSVP {
       padding: 10px 20px;
       font-size:20px;
       border-radius:0px;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
     }
     select {
       font-size:16px;
       height: 40px;
       width:49%;
       background-color:white;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
       -webkit-appearance: inner-spin-button;
     }
     .selection {
@@ -324,10 +324,16 @@ section#RSVP {
       align-items:center;
     }
     input[type=text] {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
       width:290px;
       margin:10px 0px;
     }
     input[type=submit] {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
       width: 332px;
       padding:20px;
       border:0;
