@@ -34,7 +34,9 @@
 /* Smartphones (portrait and landscape) ----------- */
 
 @media(max-width: 720px) {
-
+  h1 {
+    font-size:60px;
+  }
   header {
     height: 50vh;
     min-height: 500px;
@@ -183,6 +185,10 @@
   footer .contacts {
     display:block;
     width: auto;
+  }
+  // CREDITS
+  .creds a.author {
+    font-size: 17px;
   }
 }
 

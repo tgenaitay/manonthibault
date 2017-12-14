@@ -13,6 +13,20 @@ footer {
   }
   p {
     color:white;
+    text-align:center;
+  }
+  span {
+    position:relative;
+    padding-bottom: 4px;
+  }
+  span:after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    border-width: 0 0 1px;
+    border-style: solid;
   }
   .contacts {
     width:50%;
@@ -22,6 +36,9 @@ footer {
     padding:40px;
     a {
       color:white;
+    }
+    p {
+      text-align: left;
     }
   }
   margin-bottom: 50px;
