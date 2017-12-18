@@ -7,8 +7,6 @@ inView('[data-animate-in]').on('enter', function(el){
 inView('[data-animate-in]').on('exit', function(el){
         el.classList.remove('in-view')});
 
-// document.getElementById("loader").classList.toggle("fadeOut")
-
 }, false );
 
 function toggleNav() {
@@ -18,3 +16,4 @@ function toggleNav() {
 function toggleForm() {
   document.getElementById("form").classList.toggle("visible");
 }
+
