@@ -28,13 +28,40 @@ title: M&T - All we need is love!
   <%= partial "layouts/navbar" %>
 
   <section id="mt" class="white">
-    <div class="section-content">
-      <p data-animate-in="up">
-        This is the first section!
-      </p>
-      <h2 data-animate-in="up">
-        To introduce the couple
-      </h2>
+    <div class="section-content intro">
+
+      <div class="manon">
+
+        <%= image_tag 'Manon.png' %>
+        <h1>Manon</h1>
+        <h2 data-animate-in="up">
+        vue par Thibault
+        </h2>
+        <input type="checkbox" class="read-more-state" id="introM" />
+        <p data-animate-in="up" class="read-more-wrap">
+          Née sous les cocotiers en Martinique, Manon grandit dans le Pays Basque. Incapable de survivre longtemps sans mettre le pied sur une plage pour cultiver un bon teint, elle tâche de toujours rester proche de l’Espagne pour la danse, les tapas, la fiesta... <span class="read-more-target">Pour ses études elle ira s’aventurer jusque Bordeaux, “le Grand-Nord”, et sera même contrainte d’aller braver le froid polaire à Jouy-en-Josas. Son amour pour la langue chinoise l’emmène étudier puis vivre dans la contrée lointaine de Shanghai. Lorsqu’en 2011 elle y rencontre Thibault - un mec vraiment bien ;) - elle décide de s’installer dans la région. Rien ne l’arrête: conseil, marketing, finance, merchandising - Manon la sprinteuse tacle avec entrain chacun de ses jobs, et souvent ses managers au passage. Elle court sur ses talons hauts entre ses 2 séances de sport et ses avions. Elle prendra tout de même le temps de rentrer 4 fois par an pour faire son shopping dans Paris, Barcelone ou Bayonne. Ah et aussi, c’est vraiment la plus belle.</span>
+        </p>
+        <label for="introM" class="read-more-trigger"></label>
+
+      </div>
+
+      <div class="thibault">
+
+        <%= image_tag 'Thibault.png' %>
+
+        <h1>Thibault</h1>
+
+        <h2 data-animate-in="up">
+        vu par Manon
+        </h2>
+        <input type="checkbox" class="read-more-state" id="introT" />
+        <p data-animate-in="up" class="read-more-wrap">
+        La légende dit que Thibault, né en Bretagne un jour pluvieux d’août 1989, serait né avec un ordinateur dans les bras. À l’âge de 8 ans son rêve était de devenir « vendeur dans une boutique d’informatique ». Mais il fut rattrapé par l’envie de voyager ...<span class="read-more-target"> et de profiter des open bars d’école de commerce - et s’engagea dans des études monacales à Angers. S’entourant des étudiants les plus brillants de sa promotion, a.k.a « Coni l’Erudit », « Thomas Profession de Foie » ou encore « Marion Gare aux Poltrons », c’est avec panache qu’il obtînt son diplôme et un billet aller simple pour Shanghai à la conquête du pays des raviolis. Depuis 6 ans, sa gentillesse sans égal et son humour bien à lui font le bonheur de son entourage et en particulier de sa compagne qui a la chance de partager sa vie au quotidien. Récemment devenu entrepreneur à succès, il s’adapte à toutes les situations avec une facilité déconcertante. Vous le croiserez lors de conférences avec le gratin du consulat de France à Shanghai, ou sirotant un Spritz Aperol dans son déguisement de licorne.</span>
+        </p>
+        <label for="introT" class="read-more-trigger"></label>
+
+
+      </div>
     </div>
   </section>
 
@@ -152,10 +179,10 @@ title: M&T - All we need is love!
             <h1>Notre liste</h1>
           </li>
           <li>
-            <a href="#" class="first">Consultez notre liste d'envie ></a>
+            <a href="/liste.html" class="first">Participez librement à notre voyage! ></a>
           </li>
           <li>
-            <a href="#" class="second">ou participez à notre voyage! ></a>
+            <a href="#" class="second">ou consultez notre liste d'envies ></a>
           </li>
         </ul>
       </div>
@@ -175,15 +202,16 @@ title: M&T - All we need is love!
           <a onclick="toggleForm()">&#10060;</a>
         </span>
         <ul>
-          <li><input type="text" placeholder="nom prénom" name="Nom" required></li>
           <li>
             <div class="choice">
-            <label for="oui">Je participe</label>
-            <input type="radio" value="oui" id="oui" name="participe">
-            <label for="non"><span>Je ne participe pas</span></label>
+            <input type="radio" checked value="oui" id="oui" name="participe"> <label for="oui">Je participe</label>
+            </div>
+            <div class="choice">
             <input type="radio" value="non" id="non" name="participe">
+ <label for="non"><span>Je ne participe pas</span></label>
             </div>
           </li>
+          <li><input type="text" placeholder="nom prénom" name="Nom" required></li>
           <li class="selection">
             <select name="Adultes">
               <option value="0">Adultes</option>
@@ -202,8 +230,7 @@ title: M&T - All we need is love!
             </select>
           </li>
           <li><input type="text" placeholder="adresse email" name="email" required></li>
-          <li><input type="text" placeholder="adresse postale" name="adresse"></li>
-          <li><input type="submit" value="envoyer"></li>
+          <li><input type="submit" value="envoyer" class="submit"></li>
         </ul>
       </form>
     </div>

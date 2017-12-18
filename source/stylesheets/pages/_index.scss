@@ -38,11 +38,33 @@ section {
 
 section.white {
   background-color:white;
+  padding:30px 0px;
+  .intro{
+    display:flex;
+    flex-direction:initial;
+  }
+  .intro div {
+    padding:0px 40px;
+    text-align:center;
+    width:50%;
+  }
+  img {
+    width:180px;
+    margin:20px 0px;
+  }
   p {
     color: $dark-blue;
+    // text-indent: 50px;
+    text-align:left;
+    line-height: 18px;
+  }
+  h1 {
+    font-size:40px;
+    text-align:center;
   }
   h2 {
     color: $light-blue;
+    text-align:center;
   }
 }
 
@@ -342,6 +364,7 @@ section#RSVP {
       color:white;
       text-transform:uppercase;
       margin-top: 10px;
+      cursor:pointer;
     }
   }
 }
