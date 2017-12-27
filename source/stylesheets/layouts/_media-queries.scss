@@ -172,16 +172,16 @@
   justify-content:space-around;
   align-items: center;
   flex-direction:column;
-  img.bouquet {
-    height:30vh;
-    margin:0 auto;
+    img.bouquet {
+      height:30vh;
+      margin:0 auto;
     }
-  a {
-    font-size: 27px;
-  }
-  a:after {
-
-  }
+    a {
+      font-size: 27px;
+    }
+    a:after {
+      position: initial;
+    }
   }
 
   // RSVP
