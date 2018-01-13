@@ -10,19 +10,6 @@
 
 $Neutra: "Neutra Text Demi SC";
 
-// @font-face {
-//     font-family: 'Retrology Clean';
-//     src: url('../fonts/Retrology-Clean.eot');
-//     src: url('../fonts/Retrology-Clean.eot?#iefix') format('embedded-opentype'),
-//         url('../fonts/Retrology-Clean.woff') format('woff'),
-//         url('../fonts/Retrology-Clean.ttf') format('truetype');
-//     font-weight: normal;
-//     font-style: normal;
-// }
-
-// $Retrology: "Retrology Clean";
-
-
 @font-face {
     font-family: 'Outfitter Script';
     src: url('../fonts/OutfitterScript.eot');
@@ -56,7 +43,7 @@ h2 {
   font-weight:100;
 }
 
-body, p, h1, input, select {
+body, p, h1, input, select, textarea {
   font-family: $body-font;
 }
 
