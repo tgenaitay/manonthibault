@@ -17,7 +17,6 @@
   opacity: 0;
   transition: transform .9s ease-in-out;
 }
-
 [data-animate-in].in-view {
   transition-delay: .4s;
   opacity: 1;
