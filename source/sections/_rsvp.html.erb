@@ -1,0 +1,47 @@
+<section id="RSVP" data-animate-in="fadeIn">
+    <div class="section-content">
+      <div class="cta">
+      <h1 data-animate-in="up">RSVP</h1>
+      <h2 data-animate-in="up">Réponse souhaitée avant le 30 avril 2018</h2>
+      <a data-animate-in="fadeIn" onclick="toggleForm()">formulaire réponse ></a>
+      </div>
+    </div>
+    <div class="form" id="form">
+      <form action="/thankyou.html" name="RSVP Samedi 23 Juin 2018" data-netlify="true">
+        <span id="close">
+          <a onclick="toggleForm()">&#10060;</a>
+        </span>
+        <ul>
+          <li>
+            <div class="choice">
+              <input type="radio" checked value="oui" id="oui" name="participe"> <label for="oui">Je participe</label>
+            </div>
+            <div class="choice">
+              <input type="radio" value="non" id="non" name="participe">
+              <label for="non"><span>Je ne participe pas</span></label>
+            </div>
+          </li>
+          <li><input type="text" placeholder="nom prénom" name="Nom" required></li>
+          <li class="selection">
+            <select name="Adultes">
+              <option value="0">Adultes</option>
+              <option value="1">1 adulte</option>
+              <option value="2">2 adultes</option>
+              <option value="3">3 adultes</option>
+              <option value="4">4 adultes</option>
+            </select>
+            <select name="Enfants">
+              <option value="0">Enfants</option>
+              <option value="0">0 enfants</option>
+              <option value="1">1 enfant</option>
+              <option value="2">2 enfants</option>
+              <option value="3">3 enfants</option>
+              <option value="4">4 enfants</option>
+            </select>
+          </li>
+          <li><input type="text" placeholder="adresse email" name="email" required></li>
+          <li><input type="submit" value="envoyer" class="submit"></li>
+        </ul>
+      </form>
+    </div>
+  </section>

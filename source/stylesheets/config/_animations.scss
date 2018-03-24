@@ -2,13 +2,13 @@
   transform: translate3d(0,24px,0);
 }
 [data-animate-in=left] {
-    transform: translate3d(-25%,0,0);
+  transform: translate3d(-25%,0,0);
 }
 [data-animate-in=right]{
   transform:translate3d(25%,0,0)
 }
 [data-animate-in=down] {
-    transform:translate3d(0,-24px,0)
+  transform:translate3d(0,-24px,0)
 }
 [data-animate-in=fadeIn]{
   transform:translate3d(0,0,0)
